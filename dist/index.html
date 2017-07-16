@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+    canvas {
+        border: 1px solid black;
+        background: lavender;
+    }
+    body {
+        margin: 0;
+    }
+    .control {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .floatControl {
+        float: left;
+    }
+    .panel {
+        height: 70px;
+    }
+</style>
+<body>
+<canvas></canvas>
+<div>
+    <div id='undo' class="control floatControl"><button>Undo</button></div>
+    <div id='redo' class="control floatControl"><button>Redo</button></div>
+    <div id='saveLS' class="control floatControl"><button>Save to LS</button></div>
+    <div id='readLS' class="control floatControl"><button>Read from LS</button></div>
+    <div id='clear' class="control"><button>Clear all</button></div>
+    <div class="control">
+        <label for="colorSelect"> Please choose line width</label>
+        <input type="number" value="3">
+    </div>
+    <div class="control">
+        <label for="colorSelect"> Please choose line color</label>
+        <select>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+        </select>
+    </div>
+</div>
+<script src="bundle.js"></script>
+</body>
+</html>
